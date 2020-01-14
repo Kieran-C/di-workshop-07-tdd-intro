@@ -16,4 +16,12 @@ describe('Array', function() {
       expect(array.length).to.equal(5)
     })
   })
+
+  describe('#pop()', function() {
+    it('should alter the length properly', function(){
+      var array = [1,1,1,1]
+      array.pop(1)
+      expect(array.length).to.equal(3)
+    })
+  })
 })
